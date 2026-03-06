@@ -1,0 +1,171 @@
+:host {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.hero-portrait {
+  max-height: 85vh;
+  width: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.nav-link:hover {
+  color: #2e8b57 !important;
+}
+
+.navi {
+  font-family: 'Dancing Script', cursive;
+}
+
+.skills-section {
+  text-align: center;
+  color: #ffffff;
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .skill-badge {
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #2e8b57;
+  }
+}
+
+.projects-section {
+  color: #ffffff;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #333;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #2e8b57;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: bold;
+    }
+  }
+}
+
+.transition-hover {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  img {
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.cell-hover-table {
+  td, th {
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  tbody td:hover {
+    background-color: #e6e9ec !important;
+    cursor: default;
+  }
+}
+
+.btn-hire {
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #3a3a3a;
+    color: #fff;
+  }
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #111111 !important;
+}
+
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, visibility;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
